@@ -1,9 +1,9 @@
 ------------------------------------------------------------------------------
 -- Title      : Cameralink Interface
--- Project    : zcu102_mlabs
+-- Project    : zcu102_mpsoc
 ------------------------------------------------------------------------------
 -- File        : cameralink_interface.vhd
--- Author      : Daniel Jiménez Mazure
+-- Author      : Daniel Jimï¿½nez Mazure
 -- Company     : DDR/TICH
 -- Created     : 16/06/2018 - 15:07:29
 -- Last update : 17/10/2019 - 18:37:12
@@ -23,20 +23,20 @@
 -- SVN Commit : $Date: 2018-07-27 15:23:56 +0200 (vi., 27 jul. 2018) $
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
---* @cambio 16/06/2018 djmazure => versión inicial
+--* @cambio 16/06/2018 djmazure => versiï¿½n inicial
 ------------------------------------------------------------------------------
--- Descripción:
+-- Descripciï¿½n:
 -- Instancia de PLL + CameralinkRX  que toma como reloj de entrada el de
--- un transmisor tipo cameralink. Debe mapear las salidas según lo especificado en
+-- un transmisor tipo cameralink. Debe mapear las salidas segï¿½n lo especificado en
 -- el DS del sensor.
 -- El controlador debe considerar dos opciones: que el reloj de cameralink sea
 -- mayor o menor a 50MHz. El VCO del PLL debe quedar en un rango entre 800MHz y
--- 1600 MHz, por lo que los factores de multiplicación y división deben adaptarse
+-- 1600 MHz, por lo que los factores de multiplicaciï¿½n y divisiï¿½n deben adaptarse
 -- a la frecuencia de entrada para no salirse del rango de dicho VCO.
--- La primera opción para deserializar los datos es usar ISERDES, con el problema 
+-- La primera opciï¿½n para deserializar los datos es usar ISERDES, con el problema 
 -- inicial que los ISERDES 3 para ULTRASCALE PLUS no tienen ni bitslip ni un factor
 -- de 1:7 para cameralink.
--- La segunda opción es registrar los datos con IDDRs. Para alinear los datos con 
+-- La segunda opciï¿½n es registrar los datos con IDDRs. Para alinear los datos con 
 -- el reloj 7:4, el reloj se puede deserializar. Para poder darle el mismo reloj
 -- tanto al deserializador como al PLL se puede usar un IBUFDS_DIFF_OUT (salida 
 -- diferencial) y usar cada una de las dos salidas para rutal al PLL y al de-
@@ -139,7 +139,7 @@ architecture behavioral of cameralink_interface is
   ------------------------------------------------------------------------------
   -- SIGNALS
   ------------------------------------------------------------------------------
-  -- Señales
+  -- Seï¿½ales
 
   signal clk_1x              : std_logic;
   signal clk_7x              : std_logic;

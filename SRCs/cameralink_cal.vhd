@@ -1,9 +1,9 @@
 ------------------------------------------------------------------------------
 -- Title      : Cameralink Calibration
--- Project    : zcu102_mlabs
+-- Project    : zcu102_mpsoc
 ------------------------------------------------------------------------------
 -- File        : cameralink_calibration.vhd
--- Author      : Daniel Jiménez Mazure
+-- Author      : Daniel Jimï¿½nez Mazure
 -- Company     : DDR/TICH
 -- Created     : 15/02/2019 - 15:47:29
 -- Last update : 15/02/2019 - 15:47:29
@@ -137,7 +137,7 @@ begin
   end process;
 
   -----------------------------------------------------------------------------
-  -- Genera una señal de error en el dominio de 7X. 
+  -- Genera una seï¿½al de error en el dominio de 7X. 
   -----------------------------------------------------------------------------
 
   PROC_ERROR_GEN : process(CLK_7X, LOCKED)

@@ -1,9 +1,9 @@
 ------------------------------------------------------------------------------
 -- Title      : Cameralink Receiver
--- Project    : zcu102_mlabs
+-- Project    : zcu102_mpsoc
 ------------------------------------------------------------------------------
 -- File        : cameralink_receiver.vhd
--- Author      : Daniel Jiménez Mazure
+-- Author      : Daniel Jimï¿½nez Mazure
 -- Company     : DDR/TICH
 -- Created     : 16/06/2018 - 15:07:29
 -- Last update : 17/10/2019 - 18:17:23
@@ -23,13 +23,13 @@
 -- SVN Commit : $Date: 2018-08-05 16:10:01 +0200 (do., 05 ago. 2018) $
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
---* @cambio 16/06/2018 djmazure => versión inicial
---* @cambio 17/10/2019 djmazure => Controlador refactorizado y con genérico
+--* @cambio 16/06/2018 djmazure => versiï¿½n inicial
+--* @cambio 17/10/2019 djmazure => Controlador refactorizado y con genï¿½rico
 -- para adaptarse a la tarjeta de trenz
 ------------------------------------------------------------------------------
--- Descripción:
--- Instancia de los IDDR y cambio de dominio a través de una FIFO. Deserializa
--- el reloj cameralink y lo usa para determinar los límites del pixel.
+-- Descripciï¿½n:
+-- Instancia de los IDDR y cambio de dominio a travï¿½s de una FIFO. Deserializa
+-- el reloj cameralink y lo usa para determinar los lï¿½mites del pixel.
 ------------------------------------------------------------------------------
 
 library IEEE;
@@ -99,7 +99,7 @@ architecture with_IDDRE1 of cameralink_receiver is
   end component;
 
   -----------------------------------------------------------------------------
-  -- Señales
+  -- Seï¿½ales
   -----------------------------------------------------------------------------
   signal Q1, Q2               : std_logic_vector(3 downto 0);
   --
@@ -121,12 +121,12 @@ architecture with_IDDRE1 of cameralink_receiver is
   ------------------------------------------------------------------------------
   -- FSM
   ------------------------------------------------------------------------------
-  -- Máquina de estados
+  -- Mï¿½quina de estados
   signal r_fsm_training       : t_fsm_training                := FSM_IDLE;
   signal n_fsm_training       : t_fsm_training;
 
   -----------------------------------------------------------------------------
-  -- Señales FSM
+  -- Seï¿½ales FSM
   -----------------------------------------------------------------------------
 
   signal r_training_success : std_logic                     := '0';

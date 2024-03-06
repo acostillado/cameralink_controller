@@ -1,9 +1,9 @@
 ------------------------------------------------------------------------------
 -- Title      : Cameralink Clocking
--- Project    : zcu102_mlabs
+-- Project    : zzcu102_mpsoc
 ------------------------------------------------------------------------------
 -- File        : cameralink_clocking.vhd
--- Author      : Daniel Jiménez Mazure
+-- Author      : Daniel Jimï¿½nez Mazure
 -- Company     : DDR/TICH
 -- Created     : 16/06/2018 - 15:07:29
 -- Last update : 17/10/2019 - 12:34:56
@@ -23,9 +23,9 @@
 -- SVN Commit : $Date: 2018-07-25 15:15:30 +0200 (mi., 25 jul. 2018) $
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
---* @cambio 28/06/2018 djmazure => versión inicial
+--* @cambio 28/06/2018 djmazure => versiï¿½n inicial
 ------------------------------------------------------------------------------
--- Descripción:
+-- Descripciï¿½n:
 -- Instancia de PLL  (Xilinx) que toma como reloj de entrada el de
 -- un transmisor tipo cameralink.
 --
